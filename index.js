@@ -14,7 +14,10 @@ const port = process.env.PORT || 8000;
 
 app.use(
   cors({
-    origin: [process.env.CLIENT_URL],
+    origin: [
+      "https://accredian-frontend-task-seven-ruddy.vercel.app",
+      "https://accredian-frontend-task-asheshmandal2003s-projects.vercel.app/",
+    ],
     credentials: true,
   })
 );
